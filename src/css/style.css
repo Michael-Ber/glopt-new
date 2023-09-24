@@ -17,10 +17,35 @@
 
 @layer components {
     .container {
-        @apply min-w-[1145px] lg:min-w-[960px] md:min-w-[720px] sm:min-w-[540px] xs:min-w-[100%] mx-auto;
+        @apply w-[1145px] lg:w-[960px] md:w-[720px] sm:w-[540px] xs:w-[100%] mx-auto;
     }
 
     .btn {
         @apply px-[23px] py-[18px] bg-main rounded-[30px] text-[12px] leading-[22px] font-normal uppercase hover:brightness-75 transition-all
     }
+    .burger-btn {
+        display: none;
+        flex-direction: column;
+        gap: 7px;
+        cursor: pointer;
+    }
+    .burger-menu {
+        transform: translateX(-100%);
+        transition: .3s all ease;
+    }
+    .burger-menu_active {
+        transform: translateX(0);
+    }
+    .burger-btn span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
