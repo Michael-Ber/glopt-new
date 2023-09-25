@@ -18,8 +18,22 @@ module.exports = {
         'btn-bg': '#25333c',
         'gray-light': '#3a3a3a',
         'gray-dark': '#2e2e2e',
+        'blue-light': '#f3f3f3',
+        'pink-light': '#e9e9e9'
+      },
+      gridTemplateColumns: {
+        'work': 'repeat(3, 360px)',
+        'delivery-xs': '300px',
+        'form-input': 'repeat(3, 270px)',
+        'form-input-md': '400px',
+        'form-input-xs': '280px',
+        'schema': 'repeat(auto-fill, 255px)'
+      },
+      backgroundImage: {
+        'agent-section': 'url("./assets/img/bg/bg_agent.jpg")'
       },
     },
+
   },
   plugins: [
     { tailwindcss: {} },
