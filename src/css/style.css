@@ -20,6 +20,10 @@
         @apply w-[1145px] lg:w-[960px] md:w-[720px] sm:w-[540px] xs:w-[100%] mx-auto;
     }
 
+    .container-big {
+        @apply w-[1580px] swiper-cont:w-[1145px] lg:w-[960px] md:w-[720px] sm:w-[540px] xs:w-[100%] mx-auto;
+    }
+
     .btn {
         @apply flex justify-center items-center w-[160px] h-[45px] bg-main rounded-[30px] text-[12px] leading-[22px] font-normal uppercase hover:brightness-75 transition-all cursor-pointer text-white
     }
@@ -70,10 +74,66 @@
     .card-text {
         @apply text-sm leading-[20px] font-light text-gray-dark
     }
+
+    .comments-swiper-slide {
+        transform: scale(.6);
+        opacity: .6;
+        transition: .3s all ease;
+        flex-shrink: 0;
+    }
+
+    .comments-swiper-slide span {
+        font-size: 18px;
+    }
+
+    .comments-swiper-slide p {
+        font-size: 14px;
+    }
+
+    .swiper-slide-active {
+        transform: scale(1) !important;
+        opacity: 1 !important;
+    }
+
+    .prev {
+        display: block !important;
+        position: absolute;
+        top: 30px;
+        left: 43%;
+        z-index: 1000;
+        cursor: pointer;
+        @apply swiper-cont:left-[40%] md:left-[38%] sm:hidden !important;
+    }
+
+    .next {
+        display: block !important;
+        position: absolute;
+        top: 30px;
+        right: 43%;
+        z-index: 1000;
+        cursor: pointer;
+        @apply swiper-cont:right-[40%] md:right-[38%] sm:hidden !important;
+    }
+
+    .prev::after {
+        content: url("./assets/icons/left.png");
+
+    }
+
+    .next::after {
+        content: url("./assets/icons/right.png");
+
+    }
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@media(max-width: 575px) {
+    .comments-swiper {
+        padding: 0 8px !important;
+    }
 }

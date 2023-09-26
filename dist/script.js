@@ -44,6 +44,48 @@ var burgerMenu = function burgerMenu(btnSelector, menuSelector, overlaySelector,
 };
 
 
+/***/ }),
+
+/***/ "./src/js/slider.js":
+/*!**************************!*\
+  !*** ./src/js/slider.js ***!
+  \**************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   slider: () => (/* binding */ slider)
+/* harmony export */ });
+// import Swiper from 'swiper';
+// import 'swiper/css';
+
+var slider = function slider() {
+  try {
+    var swiper = new Swiper('.comments-swiper', {
+      centeredSlides: true,
+      initialSlide: 1,
+      slideClass: 'comments-swiper-slide',
+      navigation: {
+        nextEl: '.next',
+        prevEl: '.prev'
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1
+        },
+        992: {
+          slidesPerView: 3
+        },
+        1200: {
+          slidesPerView: 3
+        }
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 /***/ })
 
 /******/ 	});
@@ -110,11 +152,14 @@ var __webpack_exports__ = {};
   \************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./burger.js */ "./src/js/burger.js");
+/* harmony import */ var _slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slider.js */ "./src/js/slider.js");
+
 
 
 
 window.addEventListener('DOMContentLoaded', function () {
   (0,_burger_js__WEBPACK_IMPORTED_MODULE_0__.burgerMenu)('.burger-btn', '.burger-menu', null, 'burger-btn_active', 'burger-menu_active', null, '.burger-close');
+  (0,_slider_js__WEBPACK_IMPORTED_MODULE_1__.slider)();
 });
 })();
 

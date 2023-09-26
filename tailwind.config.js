@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     screens: {
       'xl': { 'max': '1920px' },
+      'swiper-cont': { 'max': '1579px' },
       'lg': { 'max': '1199px' },
       'md': { 'max': '991px' },
       'sm': { 'max': '767px' },
@@ -30,8 +31,15 @@ module.exports = {
         'schema': 'repeat(auto-fill, 255px)'
       },
       backgroundImage: {
-        'agent-section': 'url("./assets/img/bg/bg_agent.jpg")'
+        'agent-section': 'url("./assets/img/bg/bg_agent.jpg")',
+
       },
+      backgroundColor: {
+        'white-700': 'rgba(255, 255, 255, .7)'
+      },
+      borderColor: {
+        'black-200': 'rgba(0, 0, 0, .2)',
+      }
     },
 
   },

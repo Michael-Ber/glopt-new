@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <title>GLOPT</title>
 </head>
 
@@ -421,63 +424,189 @@
                     <div class="max-w-[250px] mt-8">
                         <div class="w-[61px] h-[57px] mx-auto"><img src="./assets/icons/request.png" alt="request">
                         </div>
-                        <h3 class="subtitle-sm text-center">Заявка</h3>
-                        <p class="item-text text-center">Вы оставляете заявку на нашем сайте или звоните нам</p>
+                        <h3 class="subtitle-sm text-center mt-2">Заявка</h3>
+                        <p class="item-text text-center mt-2">Вы оставляете заявку на нашем сайте или звоните нам</p>
                     </div>
                     <div class="max-w-[250px] mt-8">
                         <div class="w-[61px] h-[57px] mx-auto"><img src="./assets/icons/globe.png" alt="globe">
                         </div>
-                        <h3 class="subtitle-sm text-center">Аналитика доставки</h3>
-                        <p class="item-text text-center">Мы просчитываем варианты доставки Вашего груза</p>
+                        <h3 class="subtitle-sm text-center mt-2">Аналитика доставки</h3>
+                        <p class="item-text text-center mt-2">Мы просчитываем варианты доставки Вашего груза</p>
                     </div>
                     <div class="max-w-[250px] mt-8">
                         <div class="w-[61px] h-[57px] mx-auto"><img src="./assets/icons/contract.png" alt="contract">
                         </div>
-                        <h3 class="subtitle-sm text-center">Договор</h3>
-                        <p class="item-text text-center">Заключаем с Вами договор о поставке груза из Китая</p>
+                        <h3 class="subtitle-sm text-center mt-2">Договор</h3>
+                        <p class="item-text text-center mt-2">Заключаем с Вами договор о поставке груза из Китая</p>
                     </div>
                     <div class="max-w-[250px] mt-8">
                         <div class="w-[61px] h-[57px] mx-auto"><img src="./assets/icons/deliver.png" alt="deliver">
                         </div>
-                        <h3 class="subtitle-sm text-center">Доставка на наш склад</h3>
-                        <p class="item-text text-center">Связываемся с Вашим поставщиком в Китае и договариваемся о
+                        <h3 class="subtitle-sm text-center mt-2">Доставка на наш склад</h3>
+                        <p class="item-text text-center mt-2">Связываемся с Вашим поставщиком в Китае и договариваемся о
                             доставке груза на наш склад</p>
                     </div>
                     <div class="max-w-[250px] mt-8">
                         <div class="w-[61px] h-[57px] mx-auto"><img src="./assets/icons/check.png" alt="check">
                         </div>
-                        <h3 class="subtitle-sm text-center">Проверка груза</h3>
-                        <p class="item-text text-center">Мы проверяем, собираем и упаковываем перед отправкой Ваш груз
+                        <h3 class="subtitle-sm text-center mt-2">Проверка груза</h3>
+                        <p class="item-text text-center mt-2">Мы проверяем, собираем и упаковываем перед отправкой Ваш
+                            груз
                             на своём складе</p>
                     </div>
                     <div class="max-w-[250px] mt-8">
                         <div class="w-[61px] h-[57px] mx-auto"><img src="./assets/icons/deliver_home.png"
                                 alt="deliver_home">
                         </div>
-                        <h3 class="subtitle-sm text-center">Доставка груза</h3>
-                        <p class="item-text text-center">Мы перевозим ваш груз до места назначения и производим
+                        <h3 class="subtitle-sm text-center mt-2">Доставка груза</h3>
+                        <p class="item-text text-center mt-2">Мы перевозим ваш груз до места назначения и производим
                             таможенную очистку</p>
                     </div>
                     <div class="max-w-[250px] mt-8">
                         <div class="w-[61px] h-[57px] mx-auto"><img src="./assets/icons/payment.png" alt="payment">
                         </div>
-                        <h3 class="subtitle-sm text-center">Оплата</h3>
-                        <p class="item-text text-center">Оплачиваете доставку груза при получении</p>
+                        <h3 class="subtitle-sm text-center mt-2">Оплата</h3>
+                        <p class="item-text text-center mt-2">Оплачиваете доставку груза при получении</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="pt-[50px] pb-[65px]">
-            <div class="container">
+            <div class="container-big">
                 <h2
                     class="section-title flex items-center gap-[20px] flex-col after:w-[148px] after:h-[1px] after:bg-red-500">
-                    отзывы наших клиентов</h2>
+                    отзывы наших клиентов
+                </h2>
                 <h3 class="section-subtitle mt-4 max-w-[80%] mx-auto">Мы всегда стараемся помочь клиентам, что бы они
-                    обращались к нам снова</h3>
+                    обращались к нам снова
+                </h3>
+                <div class="comments-swiper swiper mt-7">
+                    <!-- Additional required wrapper -->
+                    <div class="comments-swiper-wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="comments-swiper-slide">
+                            <div class="w-[114px] h-[114px] mx-auto"><img src="./assets/img/jpg/anisimova.jpg"
+                                    alt="avatar">
+                            </div>
+                            <span class="block text-center leading-[22px] font-bold text-gray-light mt-2">Анисимова
+                                Ольга</span>
+                            <p class=" font-light text-center mt-2">Хочу рассказать о компании Global Opt. Самое
+                                главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла
+                                через компанию уже много раз, от расходных материалов для отеля, ло дольших партий
+                                детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                            </p>
+                        </div>
+                        <div class="comments-swiper-slide swiper-slide-active">
+                            <div class="w-[114px] h-[114px] mx-auto"><img src="./assets/img/jpg/anisimova.jpg"
+                                    alt="avatar">
+                            </div>
+                            <span
+                                class="block text-lg text-center leading-[22px] font-bold text-gray-light mt-2">Анисимова
+                                Ольга</span>
+                            <p class="text-sm font-light text-center mt-2">Хочу рассказать о компании Global Opt. Самое
+                                главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла
+                                через компанию уже много раз, от расходных материалов для отеля, ло дольших партий
+                                детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                            </p>
+                        </div>
+                        <div class="comments-swiper-slide">
+                            <div class="w-[114px] h-[114px] mx-auto"><img src="./assets/img/jpg/anisimova.jpg"
+                                    alt="avatar">
+                            </div>
+                            <span class="block text-center leading-[22px] font-bold text-gray-light mt-2">Анисимова
+                                Ольга</span>
+                            <p class="font-light text-center mt-2">Хочу рассказать о компании Global Opt. Самое
+                                главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла
+                                через компанию уже много раз, от расходных материалов для отеля, ло дольших партий
+                                детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                            </p>
+                        </div>
+                        <div class="comments-swiper-slide">
+                            <div class="w-[114px] h-[114px] mx-auto"><img src="./assets/img/jpg/anisimova.jpg"
+                                    alt="avatar">
+                            </div>
+                            <span class="block text-center leading-[22px] font-bold text-gray-light mt-2">Анисимова
+                                Ольга</span>
+                            <p class="font-light text-center mt-2">Хочу рассказать о компании Global Opt. Самое
+                                главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла
+                                через компанию уже много раз, от расходных материалов для отеля, ло дольших партий
+                                детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                            </p>
+                        </div>
+                        <div class="comments-swiper-slide">
+                            <div class="w-[114px] h-[114px] mx-auto"><img src="./assets/img/jpg/anisimova.jpg"
+                                    alt="avatar">
+                            </div>
+                            <span class="block text-center leading-[22px] font-bold text-gray-light mt-2">Анисимова
+                                Ольга</span>
+                            <p class="font-light text-center mt-2">Хочу рассказать о компании Global Opt. Самое
+                                главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла
+                                через компанию уже много раз, от расходных материалов для отеля, ло дольших партий
+                                детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                            </p>
+                        </div>
+                        <div class="comments-swiper-slide">
+                            <div class="w-[114px] h-[114px] mx-auto"><img src="./assets/img/jpg/anisimova.jpg"
+                                    alt="avatar">
+                            </div>
+                            <span class="block text-center leading-[22px] font-bold text-gray-light mt-2">Анисимова
+                                Ольга</span>
+                            <p class="font-light text-center mt-2">Хочу рассказать о компании Global Opt. Самое
+                                главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла
+                                через компанию уже много раз, от расходных материалов для отеля, ло дольших партий
+                                детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                </div>
             </div>
+        </section>
+        <section class="relative pt-[60px] pb-[80px] sm:px-2">
+            <div class="absolute top-0 left-0 w-full h-full z-[-1]">
+                <img src="./assets/img/bg/questions_bg.jpg" alt="background">
+            </div>
+            <div class="absolute top-0 left-0 w-full h-full z-[-1] bg-black bg-opacity-50"></div>
+            <div class="container">
+                <form action="#" class="max-w-[896px] mx-auto">
+                    <div class="bg-btn-bg py-5">
+                        <span
+                            class="text-[19px] block text-center font-bold uppercase text-white leading-[20px]">Остались
+                            вопросы?</span>
+                        <span class="text-[14px] block text-center font-normal uppercase text-white">Напишите
+                            нам!</span>
+                    </div>
+                    <div class="grid grid-cols-3 sm:grid-cols-1 gap-[5px] bg-white-700 px-10 pt-[17px] pb-[25px]">
+                        <input type="text" placeholder="Ваше имя..."
+                            class="py-[10px] border-[1px] border-black-200 placeholder:text-[13px] placeholder:font-light rounded-3xl pl-7 bg-white text-base font-normal outline-main">
+                        <input type="number" placeholder="Ваш номер телефона..."
+                            class="py-[10px] border-[1px] border-black-200 placeholder:text-[13px] placeholder:font-light rounded-3xl pl-7 bg-white text-base font-normal outline-main">
+                        <input type="email" placeholder="Ваше email..."
+                            class="py-[10px] border-[1px] border-black-200 placeholder:text-[13px] placeholder:font-light rounded-3xl pl-7 bg-white text-base font-normal outline-main">
+                        <textarea name="msg" id="msg" cols="30" rows="2" placeholder="Сообщение..."
+                            class="col-start-1 col-end-4 sm:col-end-2 border-[1px] placeholder:text-[13px] placeholder:font-light resize-none border-black-200 rounded-xl px-7 pt-3 bg-white text-base font-normal outline-main"></textarea>
+                        <a href="#" class="btn justify-self-center mt-4">Отправить заявку</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.6879147055984!2d37.624525677132944!3d55.746551292472276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af91f789d57%3A0xd54d5dc3a4d67dcf!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0L3QsNCxLiwgNSwg0JzQvtGB0LrQstCwLCAxMTUwMzU!5e0!3m2!1sru!2sru!4v1695717057408!5m2!1sru!2sru"
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
