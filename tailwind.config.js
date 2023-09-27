@@ -35,10 +35,12 @@ module.exports = {
 
       },
       backgroundColor: {
-        'white-700': 'rgba(255, 255, 255, .7)'
+        'white-700': 'rgba(255, 255, 255, .7)',
+
       },
       borderColor: {
         'black-200': 'rgba(0, 0, 0, .2)',
+        'white-300': 'rgba(255, 255, 255, .3)'
       }
     },
 

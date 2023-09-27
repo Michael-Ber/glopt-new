@@ -875,20 +875,8 @@ div img {
   grid-column-start: 1;
 }
 
-.col-start-2 {
-  grid-column-start: 2;
-}
-
 .col-end-4 {
   grid-column-end: 4;
-}
-
-.col-end-3 {
-  grid-column-end: 3;
-}
-
-.col-end-2 {
-  grid-column-end: 2;
 }
 
 .mx-\[20px\] {
@@ -1009,8 +997,16 @@ div img {
   height: 65px;
 }
 
+.h-\[71px\] {
+  height: 71px;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-\[32px\] {
+  height: 32px;
 }
 
 .max-h-\[63px\] {
@@ -1057,6 +1053,10 @@ div img {
   width: 67px;
 }
 
+.w-\[68px\] {
+  width: 68px;
+}
+
 .w-\[95\%\] {
   width: 95%;
 }
@@ -1068,6 +1068,10 @@ div img {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[30px\] {
+  width: 30px;
 }
 
 .min-w-\[62px\] {
@@ -1096,6 +1100,10 @@ div img {
 
 .max-w-\[90\%\] {
   max-width: 90%;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .translate-x-\[-50\%\] {
@@ -1155,6 +1163,14 @@ div img {
   justify-content: space-between;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-7 {
   gap: 1.75rem;
 }
@@ -1183,6 +1199,10 @@ div img {
   gap: 5px;
 }
 
+.gap-\[10px\] {
+  gap: 10px;
+}
+
 .gap-x-\[100px\] {
   -moz-column-gap: 100px;
        column-gap: 100px;
@@ -1209,6 +1229,10 @@ div img {
   justify-self: center;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .rounded-\[20px\] {
   border-radius: 20px;
 }
@@ -1221,12 +1245,12 @@ div img {
   border-radius: 0.75rem;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .border-\[1px\] {
   border-width: 1px;
+}
+
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
 }
 
 .border-r-\[1px\] {
@@ -1249,6 +1273,10 @@ div img {
 .border-pink-light {
   --tw-border-opacity: 1;
   border-color: rgb(233 233 233 / var(--tw-border-opacity));
+}
+
+.border-white-300 {
+  border-color: rgba(255, 255, 255, .3);
 }
 
 .bg-black {
@@ -1305,9 +1333,19 @@ div img {
   padding-right: 0.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .px-\[15px\] {
@@ -1330,24 +1368,14 @@ div img {
   padding-bottom: 1.5rem;
 }
 
-.py-\[50px\] {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.py-\[19px\] {
-  padding-top: 19px;
-  padding-bottom: 19px;
-}
-
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+.py-\[50px\] {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .pb-1 {
@@ -1398,8 +1426,12 @@ div img {
   padding-left: 30px;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .pt-\[130px\] {
@@ -1430,8 +1462,12 @@ div img {
   padding-top: 67px;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
+.pb-\[26px\] {
+  padding-bottom: 26px;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
 }
 
 .text-center {
@@ -1475,6 +1511,11 @@ div img {
   font-size: 72px;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1485,9 +1526,8 @@ div img {
   line-height: 1.25rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-\[13px\] {
+  font-size: 13px;
 }
 
 .font-bold {
@@ -1508,6 +1548,10 @@ div img {
 
 .leading-4 {
   line-height: 1rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
 }
 
 .leading-6 {
@@ -1560,6 +1604,14 @@ div img {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-opacity-60 {
+  --tw-text-opacity: 0.6;
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .outline-main {
@@ -1727,6 +1779,10 @@ div img {
   color: rgb(236 100 75 / var(--tw-text-opacity));
 }
 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 .hover\:after\:h-\[1px\]:hover::after {
   content: var(--tw-content);
   height: 1px;
@@ -1781,13 +1837,13 @@ div img {
   .md\:grid-cols-form-input-md {
     grid-template-columns: 400px;
   }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
 }
 
 @media (max-width: 767px) {
-  .sm\:col-end-3 {
-    grid-column-end: 3;
-  }
-
   .sm\:col-end-2 {
     grid-column-end: 2;
   }
@@ -1852,8 +1908,24 @@ div img {
     grid-template-columns: 280px;
   }
 
+  .xs\:flex-col {
+    flex-direction: column;
+  }
+
+  .xs\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .xs\:items-start {
+    align-items: flex-start;
+  }
+
   .xs\:justify-center {
     justify-content: center;
+  }
+
+  .xs\:gap-4 {
+    gap: 1rem;
   }
 
   .xs\:px-3 {
@@ -1871,5 +1943,10 @@ div img {
 
   .xs\:text-\[32px\] {
     font-size: 32px;
+  }
+
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
