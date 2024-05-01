@@ -94,11 +94,6 @@ gulp.task("watch", () => {
 gulp.task("build", gulp.parallel("copy-html", "build-js", "build-css"));
 
 gulp.task("prod", () => {
-  gulp.src("./src/css/output.css")
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([autoprefixer()]))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest(dist));
 
   return gulp.src("./src/js/main.js")
     .pipe(webpack({
