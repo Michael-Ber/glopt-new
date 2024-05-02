@@ -554,6 +554,8 @@ video {
   }
 }
 .btn {
+  grid-column-start: 2;
+  grid-column-end: 3;
   display: flex;
   height: 45px;
   width: 160px;
@@ -576,6 +578,13 @@ video {
 .btn:hover {
   --tw-brightness: brightness(.75);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+@media (max-width: 767px) {
+
+  .btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
 .burger-btn {
         display: none;
